@@ -1,0 +1,33 @@
+{namespace hbook=Tx_HBook_ViewHelpers}
+
+<f:renderFlashMessages class="tx_hbook-flashMessages" />
+
+<div>
+	<f:link.action action="new">Neuer Beitrag</f:link.action>
+</div>
+
+<f:if condition="{posts}">
+	<f:then>
+		<f:for each="{posts}" as="post">
+			<div class="tx_hbook-post">
+				<div class="tx_hbook-post-author">
+					Von
+
+					<f:if condition="{post.emailVisible}">
+						<f:then><f:link.email email="{post.email}">{post.author}</f:link.email></f:then>
+						<f:else>{post.author}</f:else>
+					</f:if>
+
+					am
+
+					<f:format.date format="d. m. Y, H:i">{post.date}</f:format.date></div>
+				<div class="tx_hbook-post-content">
+					<hbook:format>{post.content}</hbook:format>
+				</div>
+			</div>
+		</f:for>
+	</f:then>
+	<f:else>
+		Keine Beiträge gefunden
+	</f:else>
+</f:if>

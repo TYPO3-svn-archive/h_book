@@ -1,0 +1,5 @@
+plugin.tx_hbook.settings {
+	killSpamRating = 10
+	suspicouosSpamRating = 5
+	postsPerPage = 5
+}

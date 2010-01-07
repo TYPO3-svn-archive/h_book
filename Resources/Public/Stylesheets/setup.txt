@@ -1,0 +1,57 @@
+plugin.tx_hbook._CSS_DEFAULT_STYLE (
+	.tx_hbook-post, .tx_hbook-form {
+		border-bottom: 2px solid #234479;
+		background-color: #eee;
+		margin: 8px 0px;
+	}
+
+	.tx_hbook-post-author, .tx_hbook-form table th {
+		background-color: #234479;
+		-moz-border-radius-topleft: 12px;
+		border-top: 0px !important;
+		color: #fff;
+		text-align: left;
+		padding: 6px;
+		padding-left: 12px;
+	}
+
+	.tx_hbook-post-author a {
+		color: #fff;
+		text-decoration: none;
+		font-style: italic;
+	}
+
+	.tx_hbook-post-content {
+		padding: 12px;
+	}
+
+	.tx_hbook-form table{
+		border-spacing: 0px;
+		width: 100%;
+	}
+
+	.tx_hbook-form table td {
+		padding: 4px 12px;
+	}
+
+	.tx_hbook-form label {
+		display: block;
+		float: left;
+		width: 300px;
+	}
+
+	.tx_hbook-form input[type="text"], .tx_hbook-form textarea {
+		width: 400px;
+		border: 1px solid #a0a0a0;
+	}
+
+	input.tx_hbook-error, textarea.tx_hbook-error, tr.tx_hbook-error {
+		background-color: #ffa0a0;
+		border: 1px solid #a00000 !important;
+	}
+
+	div.tx_hbook-error {
+		font-weight: bold;
+		color: #a00000;
+	}
+)

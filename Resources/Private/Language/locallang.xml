@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the blog_example extension</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="post.new">New post</label>
+			<label index="post.new.author">Author name</label>
+			<label index="post.new.author.1238108068">Please enter a name.</label>
+			<label index="post.new.email">Email address</label>
+			<label index="post.new.email.1238108068">Please enter a email address.</label>
+			<label index="post.new.email.1221559976">This email address is not valid.</label>
+			<label index="post.new.emailVisible">Email address visible?</label>
+			<label index="post.new.content">Message</label>
+			<label index="post.new.content.1238108068">Please enter a message.</label>
+			<label index="post.new.submit">Submit</label>
+		</languageKey>
+	</data>
+</T3locallang>

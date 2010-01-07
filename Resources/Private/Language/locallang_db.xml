@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'blog_example'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_hbook_domain_model_post">Guestbook post</label>
+			<label index="tx_hbook_domain_model_post.approved">Approved by moderator</label>
+			<label index="tx_hbook_domain_model_post.content">Post content</label>
+			<label index="tx_hbook_domain_model_post.author">Author</label>
+			<label index="tx_hbook_domain_model_post.email">Email address</label>
+			<label index="tx_hbook_domain_model_post.email_visible">Email address visible</label>
+			<label index="tx_hbook_domain_model_post.ip_address">IP address</label>
+
+			<label index="tx_hbook_domain_model_smilie">Guestbook smilie</label>
+			<label index="tx_hbook_domain_model_smilie.code">Smilie code</label>
+			<label index="tx_hbook_domain_model_smilie.image">Image</label>
+		</languageKey>
+	</data>
+</T3locallang>

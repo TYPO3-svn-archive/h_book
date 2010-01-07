@@ -1,0 +1,48 @@
+{namespace hbook=Tx_HBook_ViewHelpers}
+
+<f:form method="post" controller="Post" action="create" object="{post}" name="post">
+	<div class="tx_hbook-form">
+		<table>
+			<tr>
+				<th colspan="2"><f:translate key="post.new" /></th>
+			</tr>
+			<hbook:form.propertyRow property="author">
+				<td><label for="author"><f:translate key="post.new.author" /></label></td>
+				<td>
+					<f:form.textbox property="author" id="author" errorClass="tx_hbook-error" />
+					<hbook:form.propertyErrors form="post" property="author">
+						<div class="tx_hbook-error"><f:translate key="post.new.author.{error.code}" default="{error.message}" /></div>
+					</hbook:form.propertyErrors>
+				</td>
+			</hbook:form.propertyRow>
+			<hbook:form.propertyRow property="email">
+				<td><label for="email"><f:translate key="post.new.email" /></label></td>
+				<td>
+					<f:form.textbox property="email" id="email" errorClass="tx_hbook-error" />
+					<hbook:form.propertyErrors form="post" property="email">
+						<div class="tx_hbook-error"><f:translate key="post.new.email.{error.code}" default="{error.message}" /></div>
+					</hbook:form.propertyErrors>
+				</td>
+			</hbook:form.propertyRow>
+			<hbook:form.propertyRow property="emailVisible">
+				<td><label for="emailVisible"><f:translate key="post.new.emailVisible" /></label></td>
+				<td><f:form.checkbox property="emailVisible" id="emailVisible" value="1" /></td>
+			</hbook:form.propertyRow>
+			<hbook:form.propertyRow property="content">
+				<td><label for="content"><f:translate key="post.new.content" /></label></td>
+				<td>
+					<f:form.textarea property="content" id="content" rows="6" cols="80" errorClass="tx_hbook-error" />
+					<hbook:form.propertyErrors form="post" property="content">
+						<div class="tx_hbook-error"><f:translate key="post.new.content.{error.code}" default="{error.message}" /></div>
+					</hbook:form.propertyErrors>
+				</td>
+			</hbook:form.propertyRow>
+			<tr>
+				<td colspan="2">
+					<f:form.textbox name="fruitSalad" value="" style="display: none" />
+					<f:form.submit value="{f:translate(key : 'post.new.submit')}" />
+				</td>
+			</tr>
+		</table>
+	</div>
+</f:form>
