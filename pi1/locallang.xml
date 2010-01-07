@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_hbook_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_hbook_pi1.display.writtenon">Written on</label>
+			<label index="tx_hbook_pi1.display.by">by</label>
+			<label index="tx_hbook_pi1.display.edit">Edit</label>
+			<label index="tx_hbook_pi1.display.email">Email</label>
+			<label index="tx_hbook_pi1.display.homepage">WWW</label>
+			<label index="tx_hbook_pi1.display.location">Location</label>
+			<label index="tx_hbook_pi1.display.icq">ICQ</label>
+			<label index="tx_hbook_pi1.display.aim">AIM</label>
+			<label index="tx_hbook_pi1.display.msn">MSN</label>
+			
+			<label index="tx_hbook_pi1.create">Create new entry</label>
+			<label index="tx_hbook_pi1.create.ipblocked">Your IP address has been blocked by the administrator.</label>
+			<label index="tx_hbook_pi1.create.name">Name</label>
+			<label index="tx_hbook_pi1.create.email">E-Mail</label>
+			<label index="tx_hbook_pi1.create.homepage">Homepage</label>
+			<label index="tx_hbook_pi1.create.location">Location</label>
+			<label index="tx_hbook_pi1.create.icq">ICQ</label>
+			<label index="tx_hbook_pi1.create.msn">MSN</label>
+			<label index="tx_hbook_pi1.create.aim">AIM</label>
+			<label index="tx_hbook_pi1.create.text">Text</label>
+			<label index="tx_hbook_pi1.create.submit">Create Entry</label>
+			<label index="tx_hbook_pi1.create.spamcode">Verification</label>
+			<label index="tx_hbook_pi1.create.spamcode.desc">Please verify your entry by typing the code displayed into the input field.</label>
+			
+			<label index="tx_hbook_pi1.create.error.noEmail">You must specify an email address.</label>
+			<label index="tx_hbook_pi1.create.error.noHomepage">You must specify an internet address.</label>
+			<label index="tx_hbook_pi1.create.error.noName">You must specify a name.</label>
+			<label index="tx_hbook_pi1.create.error.noText">You must specify an entry text.</label>
+			<label index="tx_hbook_pi1.create.error.noSpam.block">Your message contained words existing in an anti-spam blacklist and will not be saved.</label>
+			<label index="tx_hbook_pi1.create.error.noSpam.image">Your message contained words existing in an anti-spam blacklist. Please enter the following code into the textbox.</label>
+			<label index="tx_hbook_pi1.create.error">Error</label>
+			<label index="tx_hbook_pi1.create.error.wrongSpamcode">You entered a wrong verification code.</label>
+			
+			<label index="tx_hbook_pi1.edit">Edit entry</label>
+			<label index="tx_hbook_pi1.edit.name">Name</label>
+			<label index="tx_hbook_pi1.edit.email">E-Mail</label>
+			<label index="tx_hbook_pi1.edit.homepage">Homepage</label>
+			<label index="tx_hbook_pi1.edit.location">Location</label>
+			<label index="tx_hbook_pi1.edit.icq">ICQ</label>
+			<label index="tx_hbook_pi1.edit.msn">MSN</label>
+			<label index="tx_hbook_pi1.edit.aim">AIM</label>
+			<label index="tx_hbook_pi1.edit.text">Text</label>
+			<label index="tx_hbook_pi1.edit.comment">Comment</label>
+			<label index="tx_hbook_pi1.edit.delete">Delete</label>
+			<label index="tx_hbook_pi1.edit.save">Save</label>
+			<label index="tx_hbook_pi1.edit.ip">IP address</label>
+			<label index="tx_hbook_pi1.edit.ip.blocked">blocked</label>
+			<label index="tx_hbook_pi1.edit.ip.block">block</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_hbook_pi1.display.writtenon">Geschrieben am</label>
+			<label index="tx_hbook_pi1.display.by">von</label>
+			<label index="tx_hbook_pi1.display.edit">Bearbeiten</label>
+			<label index="tx_hbook_pi1.display.email">E-Mail</label>
+			<label index="tx_hbook_pi1.display.homepage">Homepage</label>
+			<label index="tx_hbook_pi1.display.location">Ort</label>
+			
+			<label index="tx_hbook_pi1.create">Neuen Eintrag anlegen</label>
+			<label index="tx_hbook_pi1.create.location">Ort</label>
+			<label index="tx_hbook_pi1.create.ipblocked">Ihre IP-Adresse wurde vom Administrator gesperrt.</label>
+			<label index="tx_hbook_pi1.create.submit">Eintrag anlegen</label>
+			<label index="tx_hbook_pi1.create.spamcode">Verifizierung</label>
+			<label index="tx_hbook_pi1.create.spamcode.desc">Bitte verifizieren Sie ihren Eintrag, indem Sie den angezeigten Code in das Eingabefeld eintippen.</label>
+			
+			<label index="tx_hbook_pi1.create.error">Fehler</label>
+			<label index="tx_hbook_pi1.create.error.noEmail">Sie müssen eine E-Mail-Adresse angeben.</label>
+			<label index="tx_hbook_pi1.create.error.noHomepage">Sie müssen eine Internetadresse angeben.</label>
+			<label index="tx_hbook_pi1.create.error.noName">Sie müssen einen Namen angeben.</label>
+			<label index="tx_hbook_pi1.create.error.noText">Sie müssen einen Text angeben.</label>
+			<label index="tx_hbook_pi1.create.error.noSpam.block">Ihre Nachricht enthielt Begriffe aus einer Antispam-Blacklist und wird nicht gespeichert.</label>
+			<label index="tx_hbook_pi1.create.error.noSpam.image">Ihre Nachricht enthielt Begriffe aus einer Antispam-Blacklist. Bitte geben Sie den folgenden Code in eine Textbox ein.</label>
+			<label index="tx_hbook_pi1.create.error.wrongSpamcode">Sie haben einen falschen Verifizierungscode eingegeben.</label>
+			
+			<label index="tx_hbook_pi1.edit">Eintrag bearbeiten</label>
+			<label index="tx_hbook_pi1.edit.location">Ort</label>
+			<label index="tx_hbook_pi1.edit.comment">Kommentar</label>
+			<label index="tx_hbook_pi1.edit.delete">Löschen</label>
+			<label index="tx_hbook_pi1.edit.save">Speichern</label>
+			<label index="tx_hbook_pi1.edit.ip">IP-Adresse</label>
+			<label index="tx_hbook_pi1.edit.ip.blocked">gesperrt</label>
+			<label index="tx_hbook_pi1.edit.ip.block">sperren</label>
+		</languageKey>
+		<languageKey index="fi" type="array">
+			<label index="tx_hbook_pi1.display.writtenon">Lähetyspäivä</label> 
+			<label index="tx_hbook_pi1.display.by">kirjoittaja</label> 
+			<label index="tx_hbook_pi1.display.edit">Muokkaa</label> 
+			<label index="tx_hbook_pi1.display.email">Sähköposti</label> 
+			<label index="tx_hbook_pi1.display.homepage">WWW</label> 
+			<label index="tx_hbook_pi1.display.location">Paikkakunta</label> 
+			<label index="tx_hbook_pi1.display.icq">ICQ</label> 
+			<label index="tx_hbook_pi1.display.aim">AIM</label> 
+			<label index="tx_hbook_pi1.display.msn">MSN</label> 
+			
+			<label index="tx_hbook_pi1.create">Kirjoita vieraskirjaan</label> 
+			<label index="tx_hbook_pi1.create.ipblocked">IP-osoitteesi on kielletty hallinnoinnin toimesta.</label> 
+			<label index="tx_hbook_pi1.create.name">Nimesi</label> 
+			<label index="tx_hbook_pi1.create.email">Sähköpostisi</label> 
+			<label index="tx_hbook_pi1.create.homepage">Kotisivut</label> 
+			<label index="tx_hbook_pi1.create.location">Paikkakunta</label> 
+			<label index="tx_hbook_pi1.create.icq">ICQ</label> 
+			<label index="tx_hbook_pi1.create.msn">MSN</label> 
+			<label index="tx_hbook_pi1.create.aim">AIM</label> 
+			<label index="tx_hbook_pi1.create.text">Viestisi</label> 
+			<label index="tx_hbook_pi1.create.submit">Lähetä viesti vieraskirjaan</label> 
+			<label index="tx_hbook_pi1.create.spamcode">Suojauskoodi</label> 
+			<label index="tx_hbook_pi1.create.spamcode.desc">Ole hyvä ja kirjoita oheinen suojauskoodi - toimenpide on roskapostituksia vastaan.</label> 
+			
+			<label index="tx_hbook_pi1.create.error.noEmail">Sinun täytyy antaa sähköpostiosoitteesi.</label> 
+			<label index="tx_hbook_pi1.create.error.noHomepage">Sinun täytyy antaa kotisivuosoite.</label> 
+			<label index="tx_hbook_pi1.create.error.noName">Sinun täytyy antaa nimesi.</label> 
+			<label index="tx_hbook_pi1.create.error.noText">Sinun täytyy kirjoittaa viesti.</label> 
+			<label index="tx_hbook_pi1.create.error.noSpam.block">Viestisi sisälsi kiellettyjä sanoja.</label> 
+			<label index="tx_hbook_pi1.create.error.noSpam.image">Viestissäsi oli roskapostilistalla olevia kiellettyjä sanoja. Ole hyvä ja anna oheinen suojauskoodi tekstilaatikkoon.</label> 
+			<label index="tx_hbook_pi1.create.error">Virhe</label> 
+			<label index="tx_hbook_pi1.create.error.wrongSpamcode">Annoit väärän suojauskoodin.</label>
+			
+			<label index="tx_hbook_pi1.edit">Muokkaa viestiä.</label> 
+			<label index="tx_hbook_pi1.edit.name">Nimi</label> 
+			<label index="tx_hbook_pi1.edit.email">Sähköposti</label> 
+			<label index="tx_hbook_pi1.edit.homepage">Kotisivut</label> 
+			<label index="tx_hbook_pi1.edit.location">Paikkakunta</label> 
+			<label index="tx_hbook_pi1.edit.icq">ICQ</label> 
+			<label index="tx_hbook_pi1.edit.msn">MSN</label> 
+			<label index="tx_hbook_pi1.edit.aim">AIM</label> 
+			<label index="tx_hbook_pi1.edit.text">Viesti</label> 
+			<label index="tx_hbook_pi1.edit.comment">Kommentti</label> 
+			<label index="tx_hbook_pi1.edit.delete">Poista</label> 
+			<label index="tx_hbook_pi1.edit.save">Tallenna</label> 
+			<label index="tx_hbook_pi1.edit.ip">IP-osoite</label> 
+			<label index="tx_hbook_pi1.edit.ip.blocked">kielletty</label> 
+			<label index="tx_hbook_pi1.edit.ip.block">kielto</label> 
+		</languageKey>
+	</data>
+</T3locallang>

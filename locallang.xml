@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'h_book'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">HBook</label>
+			<label index="pi1_plus_wiz_description">Adds a powerful guestbook to the page.</label>
+			
+			<label index="flex.general">General</label>
+			<label index="flex.general.what_to_display">What to display</label>
+			<label index="flex.general.what_to_display.display">List all entries</label>
+			<label index="flex.general.what_to_display.new">Create new entry</label>
+			<label index="flex.general.what_to_display.edit">Edit entry</label>
+			<label index="flex.general.limit">Number of entries to be shown ('0' to show all)</label>
+			<label index="flex.general.local">Store entries locally</label>
+			<label index="flex.general.storagePage">Storage page for entries (only when entries are not stored locally)</label>
+			<label index="flex.general.editPage">Edit page</label>
+			
+			<label index="flex.create">Create entries</label>
+			<label index="flex.create.redirect">Redirect to</label>
+			<label index="flex.create.required">Required fields</label>
+			<label index="flex.create.required.name">Name</label>
+			<label index="flex.create.required.email">E-Mail address</label>
+			<label index="flex.create.required.homepage">Homepage</label>
+			<label index="flex.create.required.text">Text</label>
+			<label index="flex.create.required.location">Location</label>
+			<label index="flex.create.required.icq">ICQ</label>
+			<label index="flex.create.required.msn">MSN</label>
+			<label index="flex.create.required.aim">AIM</label>
+			<label index="flex.create.filter">Activate spam filter</label>
+			<label index="flex.create.filter.on">On</label>
+			<label index="flex.create.filter.off">Off</label>
+			<label index="flex.create.filterWords">Spam filter words</label>
+			
+			<label index="flex.display">Display</label>
+			<label index="flex.display.maxAge">Maximum entry age (in days)</label>
+			<label index="flex.display.orderby">Order by</label>
+			<label index="flex.display.orderby.crdate.desc">Descending by date</label>
+			<label index="flex.display.orderby.crdate.asc">Ascending by date</label>
+			<label index="flex.display.orderby.author.desc">Descending by author name</label>
+			<label index="flex.display.orderby.author.asc">Ascending by author name</label>
+			<label index="flex.display.pageNum">Size of page navigator</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pi1_title">HBook</label>
+			<label index="pi1_plus_wiz_description">Fügt der Seite ein mächtiges Gästebuch hinzu.</label>
+			
+			<label index="flex.general">Allgemein</label>
+			<label index="flex.general.what_to_display">Anzeigen</label>
+			<label index="flex.general.what_to_display.display">Alle Einträge anzeigen</label>
+			<label index="flex.general.what_to_display.new">Neuen Eintrag erstellen</label>
+			<label index="flex.general.what_to_display.edit">Eintrag bearbeiten</label>
+			<label index="flex.general.limit">Anzahl der darzustellenden Einträge ('0' um alle anzuzeigen)</label>
+			<label index="flex.general.local">Einträge lokal anlegen</label>
+			<label index="flex.general.storagePage">Speicherseite (wenn Einträge nicht lokal gespeichert werden)</label>
+			<label index="flex.general.editPage">Bearbeitungsseite</label>
+			
+			<label index="flex.create">Einträge anlegen</label>
+			<label index="flex.create.redirect">Weiterleiten nach</label>
+			<label index="flex.create.required">Erforderliche Felder</label>
+			<label index="flex.create.required.email">E-Mail-Adresse</label>
+			<label index="flex.create.required.location">Wohnort</label>
+			<label index="flex.create.required.text">Text</label>
+			<label index="flex.create.filter">Spamfilter aktivieren</label>
+			<label index="flex.create.filter.on">Ein</label>
+			<label index="flex.create.filter.off">Aus</label>
+			<label index="flex.create.filterWords">Filterbegriffe</label>
+			
+			<label index="flex.display">Anzeige</label>
+			<label index="flex.display.maxAge">Höchsteintragsalter (in Tagen)</label>
+			<label index="flex.display.orderby">Sortieren nach</label>
+			<label index="flex.display.orderby.crdate.desc">Absteigend nach Datum</label>
+			<label index="flex.display.orderby.crdate.asc">Aufsteigend nach Datum</label>
+			<label index="flex.display.orderby.author.desc">Absteigend nach Name</label>
+			<label index="flex.display.orderby.author.asc">Aufsteigend nach Name</label>
+			<label index="flex.display.pageNum">Größe des Seitennavigators</label>
+		</languageKey>
+	</data>
+</T3locallang>

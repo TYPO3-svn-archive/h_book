@@ -1,0 +1,303 @@
+plugin.tx_hbook_pi1 {
+
+	templateFile = {$plugin.tx_hbook_pi1.templateFile}
+	storagePID = {$plugin.tx_hbook_pi1.pid_storage}
+	local = 0
+	ipBlockDuration = 86400
+	
+	enableAdditionalFields = icq,msn,aim,location,email,homepage
+	
+	color {
+		noSpam = #FF8000
+		error = #FF0000
+	}
+	
+	smilies {
+		display = IMAGE
+		display {
+			params = class="tx-hbook-smiley"
+		}
+		
+		data {
+			10 < plugin.tx_hbook_pi1.smilies.display
+			10 {
+				file = typo3conf/ext/h_book/smilies/grins.png
+				tag = :)
+			}
+			11 < plugin.tx_hbook_pi1.smilies.display
+			11 {
+				file = typo3conf/ext/h_book/smilies/traurig.png
+				tag = :(
+			}
+			12 < plugin.tx_hbook_pi1.smilies.display
+			12 {
+				file = typo3conf/ext/h_book/smilies/lach.png
+				tag = :D
+			}
+			13 < plugin.tx_hbook_pi1.smilies.display
+			13 {
+				file = typo3conf/ext/h_book/smilies/ugly.png
+				tag = :ugly:
+			}
+			14 < plugin.tx_hbook_pi1.smilies.display
+			14 {
+				file = typo3conf/ext/h_book/smilies/boese.png
+				tag = :evil:
+			}
+			15 < plugin.tx_hbook_pi1.smilies.display
+			15 {
+				file = typo3conf/ext/h_book/smilies/veraergert.png
+				tag = :angry:
+			}
+			16 < plugin.tx_hbook_pi1.smilies.display
+			16 {
+				file = typo3conf/ext/h_book/smilies/zwinker.png
+				tag = ;)
+			}
+		}
+	}
+	
+	create {
+		required = name,text
+		label {
+		}
+		requiredLabel < plugin.tx_hbook_pi1.create.label
+		requiredLabel {
+			wrap = | &nbsp;*
+		}
+		
+		ipblocking = 1
+		
+		filter = 1
+		filter {
+			words = gambling,gamble,viagra,poker,purchase,prescription,casino,blogshot,aciphex,actonel,adipex,diet pill,blogspot,tramadol,Nice site,buy,hydrocodone,codone,norvasc,morphine,lortab,forum.europeanservers.us,hi people!,cialis,cialis,diazepam,valium,phentermine,ultram,blackjack,whats up body!,nice job!,roulette,desk3,adipex,vagina,nymphets,sexy,nude,erotic,ringtone,rape,limewire,ativan,alprazolam,bravehost.com,site map,site-map,sex,porn,guil3rdan,fuck,spank,incest,suck,iopa6serdag,natacion,bdsm,torture,anal,lesbian,entersearch,voyeur,nudist,diet,galandosik,very nice.,celebrex,weight loss,ephedra
+			method = block
+		}
+		
+		spamCode = 1
+		spamCode {
+			length = 8
+			background {
+				r = 255
+				g = 255
+				b = 255
+			}
+			text {
+				r = 0
+				g = 0
+				b = 0
+			}
+		}
+		
+		captcha = IMAGE
+		captcha {
+			file = GIFBUILDER
+			file {
+				XY = [10.w] + 10, [10.h] + 10
+				backColor = #ffffff
+				10 = TEXT
+				10 {
+					text.field = hash
+					fontFile = t3lib/fonts/vera.ttf
+					fontSize = 12
+					offset = 5,20
+				}
+				20 = EFFECT
+				20 {
+					value = swirl = 50
+				}
+			}
+		}
+		
+		errorList {
+			item {
+				wrap = &bull;&nbsp; | <br />
+			}
+		}
+		
+		inputField {
+			width = 64
+		}
+	}
+	
+	display {
+		select {
+			orderBy = crdate DESC
+			max = 30
+		}
+	
+		labels {
+			edit = TEXT
+			edit {
+				data = LLL:EXT:h_book/pi1/locallang.xml:tx_hbook_pi1.display.edit
+				typolink {
+					wrap = &raquo;&nbsp; |
+					parameter.field = {$plugin.tx_hbook_pi1.pid_edit}
+					additionalParams.field = uid
+					additionalParams.wrap = &tx_hbook_pi1[edit][uid]=|
+				}
+			}
+			
+			email = TEXT
+			email {
+				data = LLL:EXT:h_book/pi1/locallang.xml:tx_hbook_pi1.display.email
+				typolink {
+					wrap = &raquo;&nbsp; |
+					parameter.field = email
+				}
+				if.isTrue.field = email
+			}
+			
+			homepage = TEXT
+			homepage {
+				value = WWW
+				typolink {
+					extTarget = _blank
+					wrap = &raquo;&nbsp; |
+					parameter.field = homepage
+				}
+				if.isTrue.field = homepage
+			}
+			
+			icq = TEXT
+			icq {
+				value = ICQ
+				typolink {
+					extTarget = _blank
+					wrap = &raquo;&nbsp; |
+					parameter.wrap = http://www.icq.com/ | /
+					parameter.field = icq
+				}
+				if.isTrue.field = icq
+			}
+			
+			aim = COA
+			aim {
+				10 = TEXT
+				10 {
+					data = LLL:EXT:h_book/pi1/locallang.xml:tx_hbook_pi1.display.aim
+					wrap = &raquo;&nbsp; |
+				}
+				20 = TEXT
+				20 {
+					data = field:aim
+					wrap = &nbsp;[|]
+				}
+				if.isTrue.field = aim
+			}
+			
+			msn = COA
+			msn {
+				10 = TEXT
+				10 {
+					data = LLL:EXT:h_book/pi1/locallang.xml:tx_hbook_pi1.display.msn
+					wrap = &raquo;&nbsp; |
+				}
+				20 = TEXT
+				20 {
+					data = field:msn
+					wrap = &nbsp;[|]
+				}
+				if.isTrue.field = msn
+			}
+		}
+		
+		location = COA
+		location {
+			10 = TEXT
+			10 {
+				data = LLL:EXT:h_book/pi1/locallang.xml:tx_hbook_pi1.display.location
+				wrap = <span class="tx-hbook-location-caption">|</span>:&nbsp;
+			}
+			20 = TEXT
+			20 {
+				data = field:location
+				wrap = <span class="tx-hbook-location-content">|</span>
+			}
+			if.isTrue.field = location
+			wrap = <p class="tx-hbook-location"> | </p>
+		}
+	
+		text {
+			br = 1
+			parseFunc {
+				makelinks = 1
+				makelinks {
+					http.extTarget >
+					http.wrap = &raquo&nbsp;|
+					http.ATagParams = class="tx-hbook-link"
+					
+					mailto.wrap = &raquo;&nbsp;|
+					mailto.ATagParams = class="tx-hbook-link"
+				}
+				
+				denyTags = *
+				allowTags = b,i,a,img,strong,em,u
+			}
+			encapsLines {
+				wrapNonWrappedLines = <p class="tx-hbook-paragraph"> | </p>
+			}
+			
+			image {
+				wrap = <img src="|" title="Image" alt="Image" />
+			}
+		}
+		comment < plugin.tx_hbook_pi1.display.text
+		
+		author {
+			htmlSpecialChars = 1
+			stripHtml = 1
+		}
+		
+		link {
+			case = lower
+			typolink {
+				extTarget >
+				target >
+			}
+		}
+		
+		date {
+			strftime = %A, %d. %B %Y, %H:%M
+		}
+		
+		pagebrowser {
+			wrap = <p>Page:&nbsp; | </p>
+			item {
+				typolink {
+					target = _self
+				}
+				
+				first = &laquo;
+				prev = &lsaquo;
+				
+				last = &raquo;
+				next = &rsaquo;
+				
+				wrap = [|]
+				
+				maxTotalItem = 10;
+			}
+		}
+	}
+	
+	edit {
+		page_uid = {$plugin.tx_hbook_pi1.pid_edit}
+		ip {
+			block {
+				typolink {
+					target = _self
+					wrap = [|]
+				}
+			}
+		}
+	}
+	
+#	_CSS_DEFAULT_STYLE (
+#		.tx-hbook-comment {
+#			font-style: italic;
+#		}
+#	)
+}
+
+page.includeCSS.h_book = EXT:h_book/pi1/h_book.styles.css

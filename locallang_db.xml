@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'hbook'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_hbook_entries">HBook Entry</label>
+			<label index="tx_hbook_entries.author">Author</label>
+			<label index="tx_hbook_entries.text">Text</label>
+			<label index="tx_hbook_entries.comment">Comment</label>
+			<label index="tx_hbook_entries.ip">IP Adress</label>
+			<label index="tx_hbook_entries.email">E-Mail Adress</label>
+			<label index="tx_hbook_entries.homepage">Homepage</label>
+			<label index="tx_hbook_entries.location">Location</label>
+			<label index="tx_hbook_entries.icq">ICQ</label>
+			<label index="tx_hbook_entries.msn">MSN</label>
+			<label index="tx_hbook_entries.aim">AIM</label>
+			<label index="tx_hbook_ips">Blocked IP Adress</label>
+			<label index="tx_hbook_ips.ip">IP Adress</label>
+			<label index="tt_content.list_type_pi1">HBook</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_hbook_entries">HBook-Eintrag</label>
+			<label index="tx_hbook_entries.author">Autor</label>
+			<label index="tx_hbook_entries.comment">Kommentar</label>
+			<label index="tx_hbook_entries.ip">IP-Adresse</label>
+			<label index="tx_hbook_entries.email">E-Mail-Adresse</label>
+			<label index="tx_hbook_entries.location">Ort</label>
+			<label index="tx_hbook_ips">Blockierte IP-Adresse</label>
+			<label index="tx_hbook_ips.ip">IP-Adresse</label>
+		</languageKey>
+	</data>
+</T3locallang>

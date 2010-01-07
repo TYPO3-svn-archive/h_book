@@ -1,0 +1,214 @@
+<!-- ###EDIT### begin --><fieldset>
+	<legend>###LABEL_EDIT###</legend>
+	
+	<form action="###ACTION###" method="post">
+		<table>
+			<tr>
+				<td>###LABEL_NAME###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][author]" size="###SIZE###" value="###NAME###" ###INPUT_STYLE### /></td>
+			</tr>
+			<tr>
+				<td>###LABEL_IPADDRESS###</td>
+				<td>
+					<form action="" method="post" style="display: inherit;">
+						###IPADDRESS###
+						<input type="hidden" value="###IPADDRESS###" name="block" />
+						###IP_BLOCK###
+					</form>
+				</td>
+			</tr>
+			<!-- ###SP_EMAIL### begin -->
+			<tr>
+				<td>###LABEL_EMAIL###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][email]" size="###SIZE###" value="###EMAIL###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_EMAIL### end -->
+			<!-- ###SP_HOMEPAGE### begin -->
+			<tr>
+				<td>###LABEL_HOMEPAGE###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][homepage]" size="###SIZE###" value="###HOMEPAGE###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_HOMEPAGE### end -->
+			<!-- ###SP_LOCATION### begin -->
+			<tr>
+				<td>###LABEL_LOCATION###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][location]" size="###SIZE###" value="###LOCATION###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_LOCATION### end -->
+			<!-- ###SP_ICQ### begin -->
+			<tr>
+				<td>###LABEL_ICQ###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][icq]" size="###SIZE###" value="###ICQ###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_ICQ### end -->
+			<!-- ###SP_MSN### begin -->
+			<tr>
+				<td>###LABEL_MSN###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][msn]" size="###SIZE###" value="###MSN###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_MSN### end -->
+			<!-- ###SP_AIM### begin -->
+			<tr>
+				<td>###LABEL_AIM###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][aim]" size="###SIZE###" value="###AIM###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_AIM### end -->
+			<tr>
+				<td>###LABEL_TEXT###</td>
+				<td>
+					<textarea name="tx_hbook_pi1[edit][text]" cols="###SIZE###" rows="6" ###INPUT_STYLE###>###TEXT###</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>###LABEL_COMMENT###</td>
+				<td>
+					<textarea name="tx_hbook_pi1[edit][comment]" cols="###SIZE###" rows="6" ###INPUT_STYLE###>###COMMENT###</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>###LABEL_DELETE###</td>
+				<td>
+					<input type="hidden" name="tx_hbook_pi1[edit][deleted]" value="0" />
+					<input type="checkbox" name="tx_hbook_pi1[edit][deleted]" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="hidden" name="tx_hbook_pi1[edit][uid]" value="###UID###" />
+					<input type="hidden" name="tx_hbook_pi1[edit][save]" value="1" />
+					<input type="submit" value="###LABEL_SAVE###" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+<!-- ###EDIT### end -->
+
+<!-- ###ENTRIES### begin -->
+###PAGEBROWSER###
+<!-- ###ENTRY### begin -->
+<fieldset>
+	<legend>###LABEL_WRITTENON### ###DATE### ###LABEL_BY### ###AUTHOR###</legend>
+	<div class="tx-hbook-content">
+		###LOCATION######CONTENT###
+	</div>
+<!-- ###COMMENTAREA### begin -->
+	<div class="tx-hbook-comment">
+		###COMMENT###
+	</div>
+<!-- ###COMMENTAREA### end -->
+	<p>
+		###EMAIL### ###HOMEPAGE### ###ICQ### ###MSN### ###AIM### ###EDIT###
+	</p>
+</fieldset>
+<!-- ###ENTRY### end -->
+###PAGEBROWSER###
+<!-- ###ENTRIES### end -->
+
+<!-- ###IPBLOCKED### begin -->
+<fieldset>
+	<legend>###LABEL_NEWENTRY###</legend>
+	<p>
+		###LABEL_IPBLOCKED###
+	</p>
+</fieldset>
+<!-- ###IPBLOCKED### end -->
+
+<!-- ###NEW### begin -->
+<fieldset>
+	<legend>###LABEL_NEW###</legend>
+	
+	<form action="###ACTION###" method="post" name="hbook_newentry">
+		<table>
+			<tr>
+				<td>###LABEL_NAME###</td>
+				<td><input type="text" name="tx_hbook_pi1[create][author]" size="###SIZE###" value="###NAME###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_EMAIL### begin -->
+			<tr>
+				<td>###LABEL_EMAIL###</td>
+				<td><input type="text" name="tx_hbook_pi1[create][email]" size="###SIZE###" value="###EMAIL###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_EMAIL### end -->
+			<!-- ###SP_HOMEPAGE### begin -->
+			<tr>
+				<td>###LABEL_HOMEPAGE###</td>
+				<td><input type="text" name="tx_hbook_pi1[create][homepage]" size="###SIZE###" value="###HOMEPAGE###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_HOMEPAGE### end -->
+			<!-- ###SP_LOCATION### begin -->
+			<tr>
+				<td>###LABEL_LOCATION###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][location]" size="###SIZE###" value="###LOCATION###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_LOCATION### end -->
+			<!-- ###SP_ICQ### begin -->
+			<tr>
+				<td>###LABEL_ICQ###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][icq]" size="###SIZE###" value="###ICQ###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_ICQ### end -->
+			<!-- ###SP_MSN### begin -->
+			<tr>
+				<td>###LABEL_MSN###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][msn]" size="###SIZE###" value="###MSN###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_MSN### end -->
+			<!-- ###SP_AIM### begin -->
+			<tr>
+				<td>###LABEL_AIM###</td>
+				<td><input type="text" name="tx_hbook_pi1[edit][aim]" size="###SIZE###" value="###AIM###" ###INPUT_STYLE### /></td>
+			</tr>
+			<!-- ###SP_AIM### end -->
+			<!-- ###SPAMCODE### begin -->
+			<tr>
+				<td>###LABEL_SPAMCODE###</td>
+				<td>
+					<input type="text" name="tx_hbook_pi1[create][spamcode]" size="###SPAMCODE_LENGTH###" value="" ###INPUT_STYLE### /> ###IMG_SPAMCODE###<br />
+					<small>###LABEL_SPAMCODEDESC###</small>
+				</td>
+			</tr>
+			<!-- ###SPAMCODE### end -->
+			<tr>
+				<td>###LABEL_TEXT###</td>
+				<td>
+					<div id="editpanel">
+						###SMILIES###
+						<a href="javascript:void(0);" onclick="insert('newentry_text','[b][/b]');"><strong>F</strong></a>
+						<a href="javascript:void(0);" onclick="insert('newentry_text','[i][/i]');"><em>K</em></a>
+						<a href="javascript:void(0);" onclick="insert('newentry_text','[u][/u]');"><u>U</u></a>
+						<a href="javascript:void(0);" onclick="insertLink('newentry_text');">URL</a>
+					</div>
+					<textarea name="tx_hbook_pi1[create][text]" id="newentry_text" onselect="saveCaret(this);" cols="###SIZE###" rows="6" ###INPUT_STYLE###>###TEXT###</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="###LABEL_SUBMIT###" />
+					<input type="hidden" name="tx_hbook_pi1[create][spamcode_uid]" value="###SPAMCODE_UID###" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</fieldset>
+<!-- ###NEW### end -->
+
+<!-- ###WINDOW### begin -->
+<fieldset>
+	<legend>###TITLE###</legend>
+	<p>
+		###MESSAGE###
+	</p>
+</fieldset>
+<!-- ###WINDOW### end -->
+
+<!-- ###SPAMCONFIRM### begin -->
+<fieldset>
+	<legend>###LABEL_CONFIRM###</legend>
+	<form action="###ACTION###">
+		###LABEL_MESSAGE###<br />
+		###IMAGE### <input type="text" size="###CODE_LENGTH###" maxlength="###CODE_LENGTH###" name="tx_hbook_pi1[create][spamconfirm]" /> <input type="submit" value="###LABEL_SUBMIT###" />
+		###HIDDEN###
+	</form>
+</fieldset>
+<!-- ###SPAMCONFIRM### end -->

@@ -1,0 +1,8 @@
+# cat=plugin.h_book; type=int; label= Edit page UID: The page ID of the entry editing page
+plugin.tx_hbook_pi1.pid_edit =
+
+# cat=plugin.h_book; type=int; label= Entry storage page UID: The entry storage page
+plugin.tx_hbook_pi1.pid_storage =
+
+# cat=plugin.h_book; type=file[html,htm,tmpl,txt]; label= Template File: This is a simple textfile where the guestbook is defined with HTML-code. To see an example, take a look at EXT:h_book/pi1/h_book.template.html, which provides a good example.
+plugin.tx_hbook_pi1.templateFile = EXT:h_book/pi1/h_book.template.html
