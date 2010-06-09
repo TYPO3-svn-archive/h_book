@@ -69,6 +69,10 @@ class Tx_HBook_Controller_PostController extends Tx_Extbase_MVC_Controller_Actio
 		 * @dontvalidate $post
 		 */
 	public function newAction(Tx_HBook_Domain_Model_Post $post = NULL) {
+		// @see http://forge.typo3.org/issues/show/6004
+		if ($post == NULL) {
+			$post = t3lib_div::makeInstance('Tx_HBook_Domain_Model_Post');
+		}
 		$this->view->assign('post', $post);
 	}
 
